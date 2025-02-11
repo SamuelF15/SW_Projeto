@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Horários</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Menu lateral -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <h2>Menu</h2>
+        <a href="indexProfessor.html">Início</a>
+        <a href="indexHorario.html">Gerar Horários</a>
+        <a href="indexCadrastro.html">Cadastro</a>
+    </div>
+
+    <!-- Botão para abrir o menu -->
+    <button class="open-btn" onclick="toggleSidebar()">☰ Menu</button>
+
+    <div class="content">
+        <h1>Gerador Automático de Horários</h1>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Horas</th>
+                    <th>2ª feira</th>
+                    <th>3ª feira</th>
+                    <th>4ª feira</th>
+                    <th>5ª feira</th>
+                    <th>6ª feira</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>09h às 10h</td>
+                    <td data-materia="segunda_9"></td>
+                    <td data-materia="terca_9"></td>
+                    <td data-materia="quarta_9"></td>
+                    <td data-materia="quinta_9"></td>
+                    <td data-materia="sexta_9"></td>
+                </tr>
+                <tr>
+                    <td>10h30 às 11h30</td>
+                    <td data-materia="segunda_1030"></td>
+                    <td data-materia="terca_1030"></td>
+                    <td data-materia="quarta_1030"></td>
+                    <td data-materia="quinta_1030"></td>
+                    <td data-materia="sexta_1030"></td>
+                </tr>
+                <tr>
+                    <td>11h30 às 12h30</td>
+                    <td data-materia="segunda_1130"></td>
+                    <td data-materia="terca_1130"></td>
+                    <td data-materia="quarta_1130"></td>
+                    <td data-materia="quinta_1130"></td>
+                    <td data-materia="sexta_1130"></td>
+                </tr>
+                <tr>
+                    <td>12h30 às 14h</td>
+                    <td colspan="5">Almoço</td>
+                </tr>
+                <tr>
+                    <td>14h às 15h</td>
+                    <td data-materia="segunda_14"></td>
+                    <td data-materia="terca_14"></td>
+                    <td data-materia="quarta_14"></td>
+                    <td data-materia="quinta_14"></td>
+                    <td data-materia="sexta_14"></td>
+                </tr>
+                <tr>
+                    <td>15h às 16h</td>
+                    <td data-materia="segunda_15"></td>
+                    <td data-materia="terca_15"></td>
+                    <td data-materia="quarta_15"></td>
+                    <td data-materia="quinta_15"></td>
+                    <td data-materia="sexta_15"></td>
+                </tr>
+                <tr>
+                    <td>16h30 às 17h30</td>
+                    <td data-materia="segunda_1630"></td>
+                    <td data-materia="terca_1630"></td>
+                    <td data-materia="quarta_1630"></td>
+                    <td data-materia="quinta_1630"></td>
+                    <td data-materia="sexta_1630"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="gerarHorario-Button">Gerar Horário</button>
+    </div>
+
+</body>
+</html>
+

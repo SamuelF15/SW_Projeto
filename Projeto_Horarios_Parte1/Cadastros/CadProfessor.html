@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastros</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -28,20 +29,26 @@
     <a href="./CadHorario.html"><button>Horário</button></a>
     <a href="./CadMateria.html"><button>Matéria</button></a>
 
-    <h2> Cadastro Professor</h2>
+    <h2>Cadastro Professor</h2>
 
-    <h3>Insira o nome do Professor:</h3>
+    <label for="nomeProfessor">Insira o nome do Professor:</label>
     <input type="text" id="nomeProfessor" name="nomeProfessor" required>
+    
+    <br><br>
 
-    <h3>Insira a data de nascimento:</h3>
+    <label for="dataNascimento">Insira a data de nascimento:</label>
     <input type="date" id="dataNascimento" name="dataNascimento" required>
 
-    <h3>Insira o CPF:</h3>
+    <br><br>
+    
+    <label for="CPF">Insira o CPF:</label>
     <input type="text" id="CPF" name="CPF" required>
 
+    <br><br>
+    
     <label for="disciplina">Disciplina:</label>
     <select id="disciplina" name="disciplina[]" required multiple size="6">
-        <option value="" disabled selected>Selecione uma ou mais diciplinas</option>
+        <option value="" disabled selected>Selecione uma ou mais disciplinas</option>
         <option value="Matemática">Matemática</option>
         <option value="Português">Português</option>
         <option value="História">História</option>

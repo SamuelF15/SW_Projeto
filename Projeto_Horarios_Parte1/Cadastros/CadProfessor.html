@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastros</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
 
     <!-- Menu lateral -->
-    <div id="sidebar" class="sidebar">
+    <aside id="sidebar" class="sidebar">
         <button class="close-btn" onclick="toggleSidebar()">×</button>
-        <h2>Menu</h2>
-        <a href="../indexProfessor.html">Início</a>
-        <a href="../indexHorario.html">Gerar Horários</a>
-        <a href="../indexCadastros.html">Cadastro</a>
-
-    </div>
+        <a href="indexProfessor.html">Início</a>
+        <a href="indexHorario.html">Gerar Horários</a>
+        <a href="indexCadastros.html">Cadastro</a>
+    </aside>
 
     <!-- Botão para abrir o menu -->
     <button class="open-btn" onclick="toggleSidebar()">☰ Menu</button>
@@ -33,18 +32,14 @@
 
     <label for="nomeProfessor">Insira o nome do Professor:</label>
     <input type="text" id="nomeProfessor" name="nomeProfessor" required>
-    
-    <br><br>
+
 
     <label for="dataNascimento">Insira a data de nascimento:</label>
     <input type="date" id="dataNascimento" name="dataNascimento" required>
 
-    <br><br>
     
     <label for="CPF">Insira o CPF:</label>
     <input type="text" id="CPF" name="CPF" required>
-
-    <br><br>
     
     <label for="disciplina">Disciplina:</label>
     <select id="disciplina" name="disciplina[]" required multiple size="6">
@@ -56,6 +51,8 @@
         <option value="Ciências">Ciências</option>
         <option value="Inglês">Inglês</option>
     </select>
+
+    <button id="cadastroProfessor" class="Cadastro-button">Cadastrar</button>
 
 </body>
 

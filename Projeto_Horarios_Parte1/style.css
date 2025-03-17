@@ -77,3 +77,10 @@ table tbody tr:nth-child(even) {
 table tbody tr:hover {
   background-color: #ddd;
 }
+
+iframe {
+  display: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}

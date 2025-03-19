@@ -80,8 +80,7 @@ table tbody tr:hover {
 
 iframe {
   display: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   height: 100%;
-  width: 100%;
 }
